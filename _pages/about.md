@@ -14,128 +14,124 @@ My research is about the computational mechanisms (e.g., rule generalization, di
 Updated
 ------
 <style>
-.timeline {
+.vtimeline {
   position: relative;
-  max-width: 1200px;
-  margin: 40px auto;
-}
+  padding: 30px;
+  overflow: hidden; }
+  .vtimeline:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
 
-.timeline::after {
-  content: '';
+.vtimeline-point {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px; }
+
+.vtimeline-icon {
   position: absolute;
-  width: 4px;
-  background: #007acc;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -2px;
-}
-
-.timeline-item {
-  padding: 10px 40px;
-  position: relative;
-  width: 50%;
-  box-sizing: border-box;
-  margin: 20px 0;
-}
-
-.timeline-item:nth-child(odd) {
+  top: 10px;
+  height: 25px;
+  width: 25px;
   left: 0;
-}
-
-.timeline-item:nth-child(even) {
-  left: 50%;
-}
-
-.timeline-content {
-  padding: 20px;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border: 1px solid #e9ecef;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: relative;
-}
-
-.timeline-item:nth-child(odd) .timeline-content::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f8f9fa;
-  right: -10px;
-  top: 20px;
-}
-
-.timeline-item:nth-child(even) .timeline-content::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #f8f9fa transparent transparent;
-  left: -10px;
-  top: 20px;
-}
-
-.timeline-date {
-  display: inline-block;
-  padding: 5px 12px;
-  background: #007acc;
-  color: white;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: white;
-  border: 4px solid #007acc;
+  right: 0;
+  margin: 0 auto;
   border-radius: 50%;
-  top: 25px;
-  z-index: 1;
-}
+  background: #000; }
 
-.timeline-item:nth-child(odd)::before {
-  right: -10px;
-}
+.vtimeline-block {
+  width: 45%;
+  margin: 0;
+  transition: 0.5s ease all; }
+  .vtimeline-block:after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #eee;
+    border-right: none; }
 
-.timeline-item:nth-child(even)::before {
-  left: -10px;
-}
+.vtimeline-right {
+  margin-left: 55%; }
+  .vtimeline-right.vt-animate-slide .vtimeline-content {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+  .vtimeline-right .vtimeline-date {
+    left: auto;
+    right: 55%; }
+  .vtimeline-right:after {
+    left: auto;
+    right: 45%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: none;
+    border-right: 10px solid #eee; }
 
-@media screen and (max-width: 768px) {
-  .timeline::after {
-    left: 31px;
-  }
-  
-  .timeline-item {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    left: 0 !important;
-  }
-  
-  .timeline-item::before {
-    left: 21px;
+.vtimeline-date {
+  position: absolute;
+  left: 55%;
+  top: 15px; }
+
+.vtimeline-content {
+  background: #eee;
+  transition: 0.5s ease all; }
+
+.vt-animate-fade {
+  opacity: 0; }
+
+.vt-animate-slide {
+  opacity: 0; }
+  .vt-animate-slide .vtimeline-content {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+
+.vt-noarrows:after {
+  content: none; }
+
+@media only screen and (max-width: 992px) {
+  .vtimeline:before {
+    left: 30px;
     right: auto;
-  }
-  
-  .timeline-item:nth-child(even) .timeline-content::after,
-  .timeline-item:nth-child(odd) .timeline-content::after {
+    margin: 0; }
+  .vtimeline-icon {
     left: -10px;
     right: auto;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #f8f9fa transparent transparent;
-  }
-}
+    margin: 0; }
+  .vtimeline-block {
+    width: 85%;
+    margin-left: 15%; }
+    .vtimeline-block:after {
+      left: auto;
+      right: 85%;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: none;
+      border-right: 10px solid #eee; }
+  .vtimeline-date {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    right: auto;
+    background: #eee; }
+  .vtimeline-right .vtimeline-date {
+    right: auto; }
+  .vtimeline.basic .vtimeline-date {
+    padding: 10px 10px 0 10px; }
+  .vt-animate-slide .vtimeline-content {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); } }
 </style>
 
 <div class="timeline">
