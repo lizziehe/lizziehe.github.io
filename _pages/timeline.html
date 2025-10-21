@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="vertical-timeline.css">
+</head>
+<body>
+    <div id="myTimeline">
+        <!-- 你的时间轴内容 -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="vertical-timeline.min.js"></script>
+    <script>
+        $('#myTimeline').verticalTimeline({
+            startLeft: true,
+            alternate: true,
+            animate: "fade",
+            arrows: false
+        });
+    </script>
+</body>
+</html>
