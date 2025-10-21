@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "Yunqi (Lizzie) HE"
+  pronouns         : "she/her"  
+  bio              : "Ph.D in Linguistics"
+  location         : "Hong Kong"
+  employer         : "The Hong Kong Polytechnic University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "yunqi.he@connect.polyu.hk" 
 
   # Academic websites
   academia         : # URL
