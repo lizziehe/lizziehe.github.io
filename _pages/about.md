@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yunqi (Lizzie) HE"
+title: "About ME"
 author_profile: true
 redirect_from: 
   - /about/
