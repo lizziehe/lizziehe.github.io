@@ -13,20 +13,20 @@ My research is about the computational mechanisms (e.g., rule generalization, di
 
 Updated
 ------
-**9 Oct 2025**  
+- **9 Oct 2025**  
 Huang, A., & He, Y. (2025). Integrating the Syntactic and Semantic Acquisition of Chinese Classifiers in Mandarin-speaking Children: A Corpus Study. First Language, online published. https://doi.org/10.1177/01427237251371761
 
-**Dec 2024**  
+- **Dec 2024**  
 Oral Presentation. 儿童语言获得与认知发展学术研讨会暨国家社会科学基金重大项目"儿童语言发展的行为学和脑机制研究及临床应用与数据库建设"研究推进会. 广东外语外贸大学.
 
-**Nov 2024**  
+- **Nov 2024**  
 Oral Presentation. The 49th Boston University Conference on Language Development (BUCLD 49). Boston University.
 
-**Jul 2024**  
+- **Jul 2024**  
 Oral Presentation. The 15th International Conference on Evolutionary Linguistics (第十五届演化语言学国际研讨会). Hunan University.
 
-**Oct 2023**  
+- **Oct 2023**  
 Oral Presentation. The 10th International Conference on Formal Linguistics (ICFL-10). Tsinghua University.
 
-**Sep 2023**  
+- **Sep 2023**  
 Oral Presentation. 江苏省研究生语言发展与障碍学术创新论坛. 南京师范大学.
